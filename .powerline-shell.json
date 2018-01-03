@@ -1,0 +1,12 @@
+{
+  "segments": [
+    "hostname",
+    "username",
+    "ssh", 
+    "cwd", 
+    "virtual_env", 
+    "git",
+    "root",
+    "read_only"
+  ]
+}
