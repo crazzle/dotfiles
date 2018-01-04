@@ -1,9 +1,11 @@
 " VUNDLE
 set nocompatible              " be iMproved, required
 filetype off                  " required
+filetype plugin on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vimwiki/vimwiki'
 Plugin 'airblade/vim-rooter'
 Plugin 'ryanss/vim-hackernews'
 Plugin 'vim-scripts/indentpython.vim'
@@ -58,3 +60,4 @@ let g:pymode_rope_rename_bind = '<C-c>rr'
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_completion_bind = '<C-Space>'
+
