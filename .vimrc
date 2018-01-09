@@ -23,6 +23,8 @@ filetype plugin indent on    " required
 set nu
 set clipboard=unnamed
 let g:ctrlp_show_hidden = 1
+set completeopt=menu
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " NERDTREE CONFIG
 autocmd StdinReadPre * let s:std_in=1
