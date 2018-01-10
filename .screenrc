@@ -1,0 +1,14 @@
+# Don't display the copyright page.
+startup_message off
+
+# Set up UTF-8 as the default encoding.
+encoding UTF-8
+
+# Set format for activity messages.
+activity "Activity in window %n %t at %c"
+
+# This will show the titles and locations of all screen windows.
+hardstatus alwayslastline "%{KW} %-w%{Wg} %n %t %{KW}%+w %=%l %c"
+
+# Advertise color capabilities.
+term "screen-256color"
