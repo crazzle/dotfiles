@@ -17,4 +17,5 @@ LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
 function mkcd() { mkdir $1; cd $1;}
 function gacp() { git add --all; git commit -m "$1"; git push; }
-function swiki() { cd vimwiki; gacp "sync wiki"; cd -; }
+function syncwiki() { cd vimwiki; git pull; cd -; }
+function updatewiki() { cd vimwiki; gacp "update wiki"; cd -; }
