@@ -19,6 +19,12 @@ Plugin 'metakirby5/codi.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" MARKDOWN
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+let g:markdown_syntax_conceal = 0
+let g:markdown_minlines = 100
+
 " MISC
 set nu
 set clipboard=unnamed
@@ -62,5 +68,5 @@ let g:pymode_rope_rename_bind = '<C-c>rr'
 let g:pymode_rope_completion = 1
 let g:pymode_rope_complete_on_dot = 1
 let g:pymode_rope_completion_bind = '<C-Space>'
-let g:pymode_rope_autoimport = 1
+let g:pymode_rope_autoimport = 0
 let g:pymode_rope_regenerate_on_write = 0
