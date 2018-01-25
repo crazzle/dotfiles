@@ -21,8 +21,8 @@ alias ipython="python -m IPython"
 function mkcd() { mkdir $1; cd $1;}
 function gacp() { git add --all; git commit -m "$1"; git push; }
 function docosfull() { docker-compose stop $1; docker-compose build $1; docker-compose up -d $1; }
-function syncwiki() { cd vimwiki; git pull; cd -; }
-function updatewiki() { cd vimwiki; gacp "update wiki"; cd -; }
+function syncwiki() { cd ~/vimwiki; git pull; cd -; }
+function updatewiki() { cd ~/vimwiki; gacp "update wiki"; cd -; }
 
 # MacPorts Installer addition on 2018-01-16_at_15:16:26: adding an appropriate PATH variable for use with MacPorts.
 # export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
