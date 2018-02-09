@@ -26,6 +26,7 @@ let g:markdown_syntax_conceal = 0
 let g:markdown_minlines = 100
 
 " MISC
+set noswapfile
 set nu
 set clipboard=unnamed
 let g:ctrlp_show_hidden = 1
